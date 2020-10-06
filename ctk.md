@@ -1,4 +1,4 @@
-### GUIDE V12 BY CTK
+### GUIDE V12 BY CINCO
 
 ___
 
