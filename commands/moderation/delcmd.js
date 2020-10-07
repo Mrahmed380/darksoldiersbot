@@ -3,7 +3,7 @@ const db = require("quick.db")
 module.exports = {
   name: "delcmd",
   usage: "delcmd <cmd_name>",
-  description: "Delete the custom commannd",
+  description: "❌|Borrar un comando perzonalisado",
   category: "moderation",
   run: (client, message, args) => {
 
@@ -16,7 +16,7 @@ module.exports = {
     if(database) {
       let data = database.find(x => x.name === cmdname.toLowerCase())
 
-      if(!data) return message.channel.send(":x: Unable to find this command.")
+      if(!data) return message.channel.send(":x: No encuentro este comando.")
 
       let value = database.indexOf(data)
       delete database[value]
@@ -26,11 +26,11 @@ module.exports = {
       })
 
       db.set(`cmd_${message.guild.id}`, filter)
-      return message.channel.send(`Deleted the **${cmdname}** Command!`)
+      return message.channel.send(`Borrado el **${cmdname}** Command!`)
 
 
     } else {
-      return message.channel.send(":x: Sorry but i am unable to find that command!")
+      return message.channel.send(":x: Sorry pero no estoy habilitado para borrar!")
     
 
 
