@@ -3,7 +3,7 @@ const imdb = require("imdb-api");
 
 module.exports = {
   name: "imdb",
-  description: "Get the information about series and movie",
+  description: "Obtenga la información sobre series y películas",
   category: "info",
   usage: "imdb <name>",
   run: async (client, message, args, color) => {
