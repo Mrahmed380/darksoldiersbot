@@ -4,7 +4,7 @@ const Anime = require('anime-scraper').Anime
 
 module.exports = {
   name: "scrap",
-  description: "Scrap any anime direct link from gogoanime",
+  description: "Elimina cualquier enlace directo de anime de gogoanime",
   category: "fun",
  usage: "scrap <anime_name> | <episode_no>" ,
   example: "scrap Death Note | 1",
