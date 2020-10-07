@@ -2,28 +2,28 @@ const { MessageEmbed } = require("discord.js");
 
 module.exports = {
   name: "mute",
-  description: "Mute anyone who break rules",
+  description: "⭕|Silencia a cualquiera que rompa las reglas",
   category: "moderation",
   usage: "mute <@mention> <reason>",
   run: async (client, message, args) => {
     if (!message.member.hasPermission("MANAGE_ROLES")) {
       return message.channel.send(
-        "Sorry but you do not have permission to mute anyone"
+        "Lo siento, pero no tienes permiso para silenciar a nadie."
       );
     }
 
     if (!message.guild.me.hasPermission("MANAGE_ROLES")) {
-      return message.channel.send("I do not have permission to manage roles.");
+      return message.channel.send("❌|No tengo permiso para manegar roles.");
     }
 
     const user = message.mentions.members.first();
     
     if(!user) {
-      return message.channel.send("Please mention the member to who you want to mute")
+      return message.channel.send("❌|Menciona al miembro que quieras mutear")
     }
     
     if(user.id === message.author.id) {
-      return message.channel.send("I won't mute you -_-");
+      return message.channel.send("❌|Por que te silenciarias? -_-");
     }
     
     
@@ -31,7 +31,7 @@ module.exports = {
     
     
     if(!reason) {
-      return message.channel.send("Please Give the reason to mute the member")
+      return message.channel.send("❌|Dime una razon para silenciar a alguien")
     }
     
   //TIME TO LET MUTED ROLE
@@ -40,12 +40,12 @@ module.exports = {
     
     
       if(!muterole) {
-      return message.channel.send("This server do not have role with name `Muted`")
+      return message.channel.send("❌|El servidor no cuenta con el rol `Muted`")
     }
     
     
    if(user.roles.cache.has(muterole)) {
-      return message.channel.send("Given User is already muted")
+      return message.channel.send("❌|El usuario ya esta silenciado")
     }
     
   
