@@ -5,7 +5,7 @@ module.exports = {
   name: "neko",
    category: "fun",
   
-  description: "Get Fresh Neko Images :D",
+  description: "Obtener waifus |🙈",
 run: async (client, message, args) => {
   
     let data = await random.getNeko()
