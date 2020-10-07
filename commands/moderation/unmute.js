@@ -4,19 +4,19 @@ module.exports = {
   run: async (client, message, args) => {
     if (!message.member.hasPermission("MANAGE_ROLES")) {
       return message.channel.send(
-        "Sorry but you do not have permission to unmute anyone"
+        "❌|No tienes permisos para des silenciar a alguien"
       );
     }
 
     if (!message.guild.me.hasPermission("MANAGE_ROLES")) {
-      return message.channel.send("I do not have permission to manage roles.");
+      return message.channel.send("❌|No tengo permisos.");
     }
 
     const user = message.mentions.members.first();
 
     if (!user) {
       return message.channel.send(
-        "Please mention the member to who you want to unmute"
+        "❌|Menciona al miembro que quieras des silenciar"
       );
     }
     
@@ -24,15 +24,15 @@ module.exports = {
     
     
  if(user.roles.cache.has(muterole)) {
-      return message.channel.send("Given User do not have mute role so what i am suppose to take")
+      return message.channel.send("❌|El usuario dado no tiene un rol mute, así que lo que se supone que debo hacer?")
     }
     
     
     user.roles.remove(muterole)
     
-    await message.channel.send(`**${message.mentions.users.first().username}** is unmuted`)
+    await message.channel.send(`**${message.mentions.users.first().username}** ✅| Ha sido des silenciado`)
     
-    user.send(`You are now unmuted from **${message.guild.name}**`)
+    user.send(`Ahora está des silenciado de **${message.guild.name}**`)
 
   }
 };
