@@ -17,7 +17,7 @@ module.exports = {
     
     let embed = new Discord.MessageEmbed()
       .setColor(`RANDOM`)
-      .setTitle("ANNOUNCEMENT!")
+      .setTitle("🔮|ANUNCIO|🔮")
       .setDescription(args.slice(1).join(" "))
       .setTimestamp();
     message.channel.send("Message Sended");
