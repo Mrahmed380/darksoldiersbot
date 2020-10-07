@@ -5,7 +5,7 @@ module.exports = {
   name: "joke",
    category: "fun",
   
-  description: "Get Fresh Joke :D",
+  description: "😁|Obtener nuevas bromas",
 run: async (client, message, args) => {
   
     let data = await random.getJoke()
