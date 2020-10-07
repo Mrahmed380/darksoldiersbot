@@ -5,7 +5,7 @@ const track = new NovelCovid();
 module.exports = {
   name: "corona",
   category: "info",
-  description: "Get the stats of corona",
+  description: "Obtenga las estadísticas de coronavirus",
   usage: "corona all or corona <country>",
   aliases: ["covid", "covid19"],
   run: async (client, message, args) => {
