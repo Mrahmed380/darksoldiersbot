@@ -5,7 +5,7 @@ module.exports = {
   name: "userinfo",
   aliases: ["whois", "user"],
   usage: "userinfo <MENTION>",
-  description: "Get advance stats of given person or yourself",
+  description: "⚠|Obtenga estadísticas avanzadas de una persona determinada o de usted mismo",
   run: async (client, message, args) => {
 
 
