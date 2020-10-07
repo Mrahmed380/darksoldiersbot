@@ -4,8 +4,8 @@ module.exports = {
   name: "pp",
   aliases: [],
   category: "Fun",
-  usage: "!pp <user>",
-  description: "Show's you how long is your pp xD",
+  usage: "pp <user>",
+  description: "Te muestro cuánto mide tu pito xD",
   run: async (client, message, args) => {
     var facts = [
       "",
