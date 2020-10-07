@@ -4,24 +4,24 @@ const { MessageEmbed } = require("discord.js")
 module.exports = {
   name: "suggest",
   usage: "suggest <message>",
-  description: "Send your Suggestion",
+  description: "⬜|Envía tu sugerencia",
   category: "main",
   run: (client, message, args) => {
 
     if(!args.length) {
-      return message.channel.send("Please Give the Suggestion")
+      return message.channel.send("➰|Por favor da la sugerencia")
     }
 
     let channel = message.guild.channels.cache.find((x) => (x.name === "suggestion" || x.name === "suggestions"))
 
 
     if(!channel) {
-      return message.channel.send("there is no channel with name - suggestions")
+      return message.channel.send("✳|No hay canal con nombre - sugerencias")
     }
 
 
     let embed = new MessageEmbed()
-    .setAuthor("SUGGESTION: " + message.author.tag, message.author.avatarURL())
+    .setAuthor("🔱|SUGERENCIA|🔱: " + message.author.tag, message.author.avatarURL())
     .setThumbnail(message.author.avatarURL())
     .setColor("#ff2050")
     .setDescription(args.join(" "))
