@@ -7,7 +7,7 @@ const ms = require("ms");
 module.exports =  {
   name: "rename",
   category: "main",
-  description: "Change name a people",
+  description: "➿|Cambiar el nombre de una persona",
   usage: "rename <@name> <newname>",
 
 run : (client, message, args) => {
@@ -21,7 +21,7 @@ run : (client, message, args) => {
   const embed = new MessageEmbed()
  .setTitle ("Rename!")
  .setColor ("RANDOM")
- .setDescription (`<a<a:yes:656536978992398336>697297550092271677>** | Succesfuly changed name ${user} to ${newname} **`)
+ .setDescription (`<a<a:yes:656536978992398336>697297550092271677>** | Cambio de nombre exitosamente ${user} to ${newname} **`)
  .setTimestamp()
  
 message.channel.send(embed);
