@@ -4,7 +4,7 @@ module.exports = {
   name: "announce",
   category: "main",
   usage: "announce <#channel> <message>",
-  description: "announce a message in specified channel",
+  description: "anunciar un mensaje en el canal especificado",
   run: (client, message, args) => {
     let channel = message.mentions.channels.first();
 
