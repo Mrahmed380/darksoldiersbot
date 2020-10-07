@@ -3,7 +3,7 @@ const db = require("quick.db")
 module.exports = {
   name: "addcmd",
   usage: "addcmd <cmd_name> <cmd_responce>",
-  description: "add guild custom commands",
+  description: "🔹|Agregar comandos personalizados",
   category: "moderation",
   run: (client, message, args) => {
 
