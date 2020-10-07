@@ -29,9 +29,9 @@ module.exports = (client) => {
 
     } catch(err) {
 
-  console.log("Error While loading/executing command, join for help : https://withwin.in/dbd")
+  console.log("❌|Hubo un error revisar los .js")
   console.log(err)
-  table.addRow(file, `❌ -> Error while loading event, join for help :  https://withwin.in/dbd`);
+  table.addRow(file, `❌|Error al cargar los eventos checa la carpeta`);
     }
   }
 
