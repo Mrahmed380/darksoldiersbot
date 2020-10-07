@@ -3,7 +3,7 @@ const discord = require("discord.js");
 
 module.exports = {
   name: "weather",
-  description: "Get the weather of anywhere",
+  description: "📛|Obtenga el clima de cualquier lugar",
   category: "info",
   usage: "weather <city name>",
   run: (client, message, args) => {
