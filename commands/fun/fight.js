@@ -9,7 +9,7 @@ module.exports = {
     category: "fun",
     aliases: ["battle"],
 
-    description: "To fight someone ",
+    description: "👊|Para pelear con alguien",
     usage: "battle @user",
     accessableby: "everyone",
     run: async (client, message, args) => {
@@ -32,8 +32,8 @@ module.exports = {
 
         if (!member) return message.channel.send("you need to mention someone")
         let embed = new MessageEmbed()
-            .setTitle('Here Are the results')
-            .setDescription(`${players[player]} has killed his opponent with ${guns[gun]} by ${shots[shot]}`)
+            .setTitle('👋|Aquí están los resultados')
+            .setDescription(`${players[player]} ha matado a su oponente con ${guns[gun]} por ${shots[shot]}`)
             .setColor("RANDOM")
         return message.channel.send(embed)
     }
