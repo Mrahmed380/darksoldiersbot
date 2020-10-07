@@ -3,7 +3,7 @@ const db = require("quick.db")
 module.exports = {
   name: "help",
   description:
-    "Get list of all command and even get to know every command detials",
+    "🔀|Obtenga una lista de todos los comandos e incluso conozca todos los detalles de los comandos",
   usage: "help <cmd>",
   category: "info",
   run: async (client, message, args) => {
