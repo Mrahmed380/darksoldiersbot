@@ -45,7 +45,7 @@ module.exports = {
     
     
    if(user.roles.cache.has(muterole)) {
-      return message.channel.send("❌|El usuario ya esta silenciado")
+      return message.channel.send("✅|El usuario ya esta silenciado")
     }
     
   
