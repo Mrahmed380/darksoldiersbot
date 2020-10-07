@@ -3,7 +3,7 @@ const discord = require('discord.js')
 const { getInfo } = require("../../handlers/xp.js")
 module.exports = {
   name: "level",
-  description: "Get the level of author or mentioned",
+  description: "▶|Consigue el nivel de autor o mencionado.",
   usage: "level <user>",
   category: "info",
   run: (client, message, args) => {
